@@ -59,6 +59,7 @@ public class LateArrival{
 		}
 
 		/** 自宅を出発する時刻 */
+		homeHTime = departureHTime;
 		homeMTime = departureMTime - Integer.parseInt(CommutingTime[HOME_A_Station]);
 		if ( homeMTime < 0 ) {
 			homeMTime += M_TIME;
